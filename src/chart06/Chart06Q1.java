@@ -7,9 +7,9 @@ package chart06;
  *
  */
 public class Chart06Q1 {
-
+	//修飾子:public、static　返却型:void　関数名:main　引数の型:String　引数名称:args
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
+		
 
 	}
 
