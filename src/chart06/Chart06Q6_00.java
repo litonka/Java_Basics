@@ -25,22 +25,6 @@ package chart06;
  * @author liton
  *
  */
-public class Chart06Q6 {
-	public static void printArray(Object[] objs) {
-		if (objs == null) {
-			System.out.println("null");
-			return;
-		}
-	}
+public class Chart06Q6_00 {
 
-	String prefix = "";
-	StringBuilder sb = new StringBuilder();
-	sb.append("[");
-	for(Object obj : objs){
-		sb.append(prefix);
-		sb.append(String.valueOf(obj));
-		prefix = ",";
-	}
-	sb.append("]");
-	System.out.println(sb.toString());
 }

@@ -32,11 +32,11 @@ public class Chart06Q6_02 {
 	 * @return
 	 */
 	public static int[] subArray(int[] array, int startIndex, int length) {
-		
+
 		int[] subArray = new int[2];
-		for (int i = 0; i < length + startIndex; i++) {
+		for (int i = 0; i <= length + startIndex; i++) {
 			subArray[i] = array[startIndex + i];
-			System.out.print(subArray[i]+" ");
+			System.out.print(subArray[i] + " ");
 		}
 		return subArray;
 
