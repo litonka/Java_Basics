@@ -19,5 +19,12 @@ package chart06;
  *
  */
 public class Chart06Q7 {
+	public static void main(String[] args) {
+		char[] input = new char[] { ' ', ' ', 'A', 'b', ' ', ' ', 'C', ' ' };
+	}
 
+	public static char[] trim(char[] array) {
+		return array;
+
+	}
 }
