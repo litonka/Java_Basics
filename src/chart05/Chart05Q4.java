@@ -9,13 +9,13 @@ package chart05;
 public class Chart05Q4 {
 	public static void main(String[] args) {
 
-		int[] array = new int[] { 1, 2, 6, 7, 9, 6, 2, 1, 9 };
+		int[] array = new int[] { 1, 2, 6, 7, 9, 6, 2, 1, 9};
 		int a = array[0];
 		for (int i = 0; i < array.length; i++) {
-			//			System.out.println(array[x]);
+				//System.out.println(array[i]);
 			for (int j = i + 1; j < array.length; j++) {
 				if (array[i] == array[j]) {
-					System.out.println("重複した要素：" + array[i]);
+					System.out.println("重複した要素：" + array[j]);
 				}
 			}
 		}
