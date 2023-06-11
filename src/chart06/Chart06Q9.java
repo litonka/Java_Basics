@@ -9,6 +9,12 @@ package chart06;
  * @author liton
  *
  */
+
 public class Chart06Q9 {
+	
+	public static void main(String[] args) {
+		
+	}
+	
 
 }

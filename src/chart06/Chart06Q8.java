@@ -20,6 +20,11 @@ public class Chart06Q8 {
 		}
 	}
 
+	/**
+	 * 引数arrayの配列の要素をソートした後の新しい配列arrayを返却する
+	 * @param array
+	 * @return
+	 */
 	public static int[] bubbleSort(int[] array) {
 
 		for (int i = 0; i < array.length; i++) {

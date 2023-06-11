@@ -18,14 +18,12 @@ package chart06;
  * @author liton
  *
  */
-public class Chart06Q7 {
+public class Chart06Q10 {
 	public static void main(String[] args) {
 
 		char[] input = new char[] { ' ', ' ', 'A', 'b', ' ', ' ', 'C', ' ' };
 
-		char[] output = trim(input);
-
-
+		trim(input);
 
 	}
 
@@ -35,18 +33,19 @@ public class Chart06Q7 {
 	 * @return
 	 */
 	public static char[] trim(char[] input) {
-
+		char[] output = null;
 		int index1 = 0;
-		int index2 = input.length - 1;
-
 		for (int i = 0; i < input.length; i++) {
 			if (input[i] != ' ') {
 				index1 = i;
-				System.out.println(index1);
+				output[0] = input[i];
+				System.out.println(output[0]);
 				break;
 			}
+
 		}
 
+		int index2 = 0;
 		for (int i = input.length - 1; i < input.length; i--) {
 			if (input[i] != ' ') {
 				index2 = i;
@@ -55,20 +54,7 @@ public class Chart06Q7 {
 			}
 		}
 
-		return subArray(input, index1, index2 - index1 + 1);
+		return output;
 
 	}
-	
-	
-	public static char[] subArray(char[] array, int startIndex, int length) {
-
-		char[] arr = new char[length];
-
-		for (int i = 0; i < length; i++) {
-			arr[i] = array[startIndex + i];
-		}
-		return arr;
-
-	}
-	
 }

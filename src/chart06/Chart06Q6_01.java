@@ -18,42 +18,45 @@ package chart06;
 public class Chart06Q6_01 {
 
 	public static void main(String[] args) {
+
 		int[] left = new int[] { 1, 2, 3, 4 };
 		int[] right = new int[] { 5, 6, 7, 8 };
+
 		int[] megerArray = megerArray(left, right);
 
-//				for (int result : megerArray) {
-//					System.out.print(result + " ");
-//				}
 		Object[] array = new Object[megerArray.length];
 		for (int i = 0; i < megerArray.length; i++) {
 			array[i] = Integer.valueOf(megerArray[i]);
 		}
-		//System.out.print(array);
+
 		printArray(array);
 	}
 
 	/**
-	 * 
+	 * 引数leftの要素と引数rightの要素をマージして新しい配列megerArrayを返却する。
 	 * @param left
 	 * @param right
-	 * @return
+	 * @return　
 	 */
 	public static int[] megerArray(int[] left, int[] right) {
+
 		int[] megerArray = new int[left.length + right.length];
 
 		for (int i = 0; i < left.length; i++) {
 			megerArray[i] = left[i];
 		}
+
 		for (int j = 0; j < right.length; j++) {
 			megerArray[left.length + j] = right[j];
 		}
+
 		return megerArray;
 	}
-/**
- * 
- * @param objs
- */
+
+	/**
+	 * 配列を出力する
+	 * @param objs
+	 */
 	public static void printArray(Object[] objs) {
 		if (objs == null) {
 			System.out.println("null");
