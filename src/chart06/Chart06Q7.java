@@ -22,53 +22,60 @@ public class Chart06Q7 {
 	public static void main(String[] args) {
 
 		char[] input = new char[] { ' ', ' ', 'A', 'b', ' ', ' ', 'C', ' ' };
-
 		char[] output = trim(input);
+		for (char result : output) {
+			System.out.println(result);
+		}
 
+	}
 
+	/**
+	 * 配列の起点から、 ' ' ではない⽂字列のインデックス startIndex を探す
+	 * 配列の終点から、 ' ' ではない⽂字列のインデックス endIndex を探す
+	 * @param array
+	 * @return
+	 */
+	public static char[] trim(char[] array) {
+
+		int startIndex = 0;
+		int endIndex = array.length - 1;
+
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] != ' ') {
+				startIndex = i;
+				//System.out.println(startIndex);
+				break;
+			}
+		}
+
+		for (int i = array.length - 1; i < array.length; i--) {
+			if (array[i] != ' ') {
+				endIndex = i;
+				//System.out.println(endIndex);
+				break;
+			}
+		}
+
+		return subArray(array, startIndex, endIndex - startIndex + 1);
 
 	}
 
 	/**
 	 * 
 	 * @param array
+	 * @param startIndex
+	 * @param length
 	 * @return
 	 */
-	public static char[] trim(char[] input) {
-
-		int index1 = 0;
-		int index2 = input.length - 1;
-
-		for (int i = 0; i < input.length; i++) {
-			if (input[i] != ' ') {
-				index1 = i;
-				System.out.println(index1);
-				break;
-			}
-		}
-
-		for (int i = input.length - 1; i < input.length; i--) {
-			if (input[i] != ' ') {
-				index2 = i;
-				System.out.println(index2);
-				break;
-			}
-		}
-
-		return subArray(input, index1, index2 - index1 + 1);
-
-	}
-	
-	
 	public static char[] subArray(char[] array, int startIndex, int length) {
 
-		char[] arr = new char[length];
+		char[] subArray = new char[length];
 
 		for (int i = 0; i < length; i++) {
-			arr[i] = array[startIndex + i];
+			subArray[i] = array[startIndex + i];
 		}
-		return arr;
+		return subArray;
 
 	}
-	
+
 }
