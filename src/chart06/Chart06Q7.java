@@ -24,7 +24,7 @@ public class Chart06Q7 {
 		char[] input = new char[] { ' ', ' ', 'A', 'b', ' ', ' ', 'C', ' ' };
 		char[] output = trim(input);
 		for (char result : output) {
-			System.out.println(result);
+			System.out.print(result + ",");
 		}
 
 	}

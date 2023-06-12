@@ -45,39 +45,40 @@ public class Test {
 
 
 
-public static void main(String[] args) {
-    int[] array = {5, 3, 8, 2, 1};
+//public static void main(String[] args) {
+//    int[] array = {5, 3, 8, 2, 1};
+//
+//    int[] sortedArray = bubbleSort(array);
+//
+//    // ソートされた配列を出力
+//    for (int num : sortedArray) {
+//        System.out.print(num + " ");
+//    }
+//    System.out.println();
+//}
+//
+//public static int[] bubbleSort(int[] array) {
+//    int n = array.length;
+//
+//    // 要素を交換するための一時変数
+//    int temp;
+//
+//    // バブルソートの実装
+//    for (int i = 0; i < n - 1; i++) {
+//        for (int j = 0; j < n - i - 1; j++) {
+//            if (array[j] > array[j + 1]) {
+//                // 隣接する要素を交換
+//                temp = array[j];
+//                array[j] = array[j + 1];
+//                array[j + 1] = temp;
+//            }
+//        }
+//    }
+//
+//    return array;
+//}
+		
 
-    int[] sortedArray = bubbleSort(array);
-
-    // ソートされた配列を出力
-    for (int num : sortedArray) {
-        System.out.print(num + " ");
-    }
-    System.out.println();
-}
-
-public static int[] bubbleSort(int[] array) {
-    int n = array.length;
-
-    // 要素を交換するための一時変数
-    int temp;
-
-    // バブルソートの実装
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - i - 1; j++) {
-            if (array[j] > array[j + 1]) {
-                // 隣接する要素を交換
-                temp = array[j];
-                array[j] = array[j + 1];
-                array[j + 1] = temp;
-            }
-        }
-    }
-
-    return array;
-}
-	
 	
 
 }
