@@ -24,7 +24,7 @@ public class Chart06Q7 {
 		char[] input = new char[] { ' ', ' ', 'A', 'b', ' ', ' ', 'C', ' ' };
 		char[] output = trim(input);
 		for (char result : output) {
-			System.out.print("'" + result + "',");
+			System.out.print("'" + result + "'   ");
 		}
 
 	}
@@ -32,6 +32,7 @@ public class Chart06Q7 {
 	/**
 	 * 配列の起点から、 ' ' ではない⽂字列のインデックス startIndex を探す
 	 * 配列の終点から、 ' ' ではない⽂字列のインデックス endIndex を探す
+	 * サブ配列メソッドを呼び出す
 	 * @param array
 	 * @return
 	 */
@@ -61,7 +62,7 @@ public class Chart06Q7 {
 	}
 
 	/**
-	 * 
+	 * startIndexからendIndexまでサブ配列を取得する
 	 * @param array
 	 * @param startIndex
 	 * @param length
