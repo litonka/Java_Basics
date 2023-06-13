@@ -23,9 +23,7 @@ public class Chart06Q7 {
 
 		char[] input = new char[] { ' ', ' ', 'A', 'b', ' ', ' ', 'C', ' ' };
 		char[] output = trim(input);
-		for (char result : output) {
-			System.out.print("'" + result + "'   ");
-		}
+		printArray(output);
 
 	}
 
@@ -76,6 +74,23 @@ public class Chart06Q7 {
 		}
 		return subArray;
 
+	}
+
+	public static void printArray(char[] objs) {
+		if (objs == null) {
+			System.out.println("null");
+			return;
+		}
+		String prefix = "";
+		StringBuilder sb = new StringBuilder();
+		sb.append("['");
+		for (char obj : objs) {
+			sb.append(prefix);
+			sb.append(String.valueOf(obj));
+			prefix = "', '";
+		}
+		sb.append("']");
+		System.out.println(sb.toString());
 	}
 
 }
