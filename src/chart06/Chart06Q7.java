@@ -44,7 +44,6 @@ public class Chart06Q7 {
 		for (int i = 0; i < array.length; i++) {
 			if (array[i] != ' ') {
 				startIndex = i;
-				//System.out.println(startIndex);
 				break;
 			}
 		}
@@ -52,7 +51,6 @@ public class Chart06Q7 {
 		for (int i = array.length - 1; i < array.length; i--) {
 			if (array[i] != ' ') {
 				endIndex = i;
-				//System.out.println(endIndex);
 				break;
 			}
 		}
@@ -63,6 +61,7 @@ public class Chart06Q7 {
 
 	/**
 	 * startIndexからendIndexまでサブ配列を取得する
+	 * 新しい配列subArrayを返却する
 	 * @param array
 	 * @param startIndex
 	 * @param length
