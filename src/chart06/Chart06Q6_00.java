@@ -8,7 +8,7 @@ package chart06;
 			System.out.println("null");
 			return;
 		}
-	}
+
 
 	String prefix = "";
 	StringBuilder sb = new StringBuilder();
@@ -21,7 +21,7 @@ package chart06;
 	sb.append("]");
 	System.out.println(sb.toString());
 	
-
+	}
  * @author liton
  *
  */
