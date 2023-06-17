@@ -26,6 +26,8 @@ public class Human {
 		}
 	*/
 	
+	
+	/*//UML図
 	public String name;
 	protected int age;
 	private int money;
@@ -40,5 +42,8 @@ public class Human {
 	
 	public void sleep() {
 		
-	}
+	}*/
+	
+	
+	protected String name;
 }
