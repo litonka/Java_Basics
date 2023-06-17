@@ -1,4 +1,4 @@
-package chapter07_09;
+package chapter07_09Test;
 
 public class Human {
 	/*	//属性：名称を定義する

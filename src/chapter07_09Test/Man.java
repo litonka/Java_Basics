@@ -1,4 +1,4 @@
-package chapter07_09;
+package chapter07_09Test;
 
 public class Man {
 	//属性・フィールド・クラスメンバ
