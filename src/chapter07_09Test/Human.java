@@ -1,9 +1,5 @@
 package chapter07_09Test;
 
-import java.util.Date;
-
-import Ch7.Pet;
-
 public class Human {
 	/*		//属性：名称を定義する
 			public String name;
@@ -47,36 +43,48 @@ public class Human {
 
 	/*	protected String name;*/
 
-	//Getter & Setter
+	/*	//Getter & Setter
+		*/
 	/** 名称：私有を設定して */
+	/*
 	private String name;
-
-	/**
-	 * 名称を取得する
-	 * @return 名称
-	 */
+	
+	*//**
+		* 名称を取得する
+		* @return 名称
+		*/
+	/*
 	public String getName() {
-		return name;
+	return name;
 	}
+	
+	*//**
+		* 名称を設定する
+		* @param name 設定した名称値
+		*//*
+			public void setName(String name) {
+			this.name = name;
+			}
+			
+			public static void main(String[] args) {
+			Pet dog = new Pet("pupyy", 3);
+			Date date = new Date();
+			System.out.println(date);
+			Human obj = new Human();
+					String name1 = obj.getName();
+					System.out.println(name1);
+			obj.setName("new Name");
+			String name2 = obj.getName();
+			System.out.println(name2);
+			}*/
 
-	/**
-	 * 名称を設定する
-	 * @param name 設定した名称値
-	 */
-	public void setName(String name) {
-		this.name = name;
+	public static final String PLANT = "地球";
+
+	public static void staticMethod() {
+		System.out.println("静的メソッド");
 	}
-
-	public static void main(String[] args) {
-		Pet dog = new Pet("pupyy", 3);
-		Date date = new Date();
-		System.out.println(date);
-		Human obj = new Human();
-		/*		String name1 = obj.getName();
-				System.out.println(name1);*/
-		obj.setName("new Name");
-		String name2 = obj.getName();
-		System.out.println(name2);
+	
+	public void sample() {
+		System.out.println("非静的メソッド");
 	}
-
 }
