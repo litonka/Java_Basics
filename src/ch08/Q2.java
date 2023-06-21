@@ -31,5 +31,12 @@ public class Kicker {
  *
  */
 public class Q2 {
+	public static void main(String[] args) {
+
+		Employee x = new Employee("1234");
+		Employee y = new Employee("1234");
+		System.out.println(x == y);//false メモリアドレスは一致しません
+		System.out.println(x.equals(y));//true　内容は一致します
+	}
 
 }
