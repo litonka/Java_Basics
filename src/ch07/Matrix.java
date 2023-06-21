@@ -17,5 +17,16 @@ public class Matrix {
 */
 
 public class Matrix {
+	private final int[][]data;
+	//** construct method *//
+	public Matrix(int[][] data) {
+		this.data = data;
+	}
+	// 行列 ADD
+	public Matrix add(Matrix b) {
+		//....
+		return b ;
+	}
+	
 
 }

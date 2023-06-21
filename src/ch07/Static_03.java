@@ -25,7 +25,7 @@ public class Static_03 {
 	}
 
 	public static void main(String... args) {
-		//クラスのインスタンスを作成して、非静的メソッドと非性的フィールドをアクセスすることができます。
+		//クラスのインスタンスを作成して、非静的メソッドと非静的フィールドをアクセスすることができます。
 		Static_03 kicker = new Static_03();
 		kicker.print("dcnet.java.教育");
 		System.out.println(kicker.word);
