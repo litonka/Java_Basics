@@ -14,6 +14,16 @@ public class Method01 {
 		System.out.println("a245bc".length());
 
 		System.out.println("abadx234".replace("a", "g"));
+		String[] vs = "1,".split(",");
+		System.out.println(vs.length);
+		for (String a : vs) {
+			System.out.println(a);
+		}
+		String[] vs2 = "1,".split(",", -1);
+		System.out.println(vs2.length);
+		for (String b : vs2) {
+			System.out.println(b);
+		}
 
 	}
 
