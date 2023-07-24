@@ -1,15 +1,11 @@
 package test;
 
 public class Kicker {
-	private String word = "abc";
-
-	public void print(String name) {
-		System.out.println(name);
-	}
-
 	public static void main(String[] args) {
-		Kicker kicker = new Kicker();
-		kicker.print("dcnet.java.教育");
-		System.out.println(kicker.word);
+		Child child = new Child();
+		System.out.println(child.familyName);
+		String value = child.hello();
+		System.out.println(value);
+		System.out.println(child.hello());
 	}
 }

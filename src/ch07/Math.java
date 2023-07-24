@@ -17,24 +17,41 @@ public class Math {
  */
 public class Math {
 	public static int max(int[] input) {
-		return 0;
-		//...
+		int max = input[0];
+		for (int i = 1; i < input.length; i++) {
+			if (input[i] > max) {
+				max = input[i];
+			}
+		}
+		return max;
 	}
 
 	public static int min(int[] input) {
-		return 0;
+		int min = input[0];
+		for (int i = 1; i < input.length; i++) {
+			if (input[i] < min) {
+				min = input[i];
+			}
+		}
+		return min;
 
 	}
 
 	public static double avg(int[] input) {
-		return 0;
+		double sum = 0;
+		for (double number : input) {
+			sum = sum + number;
+		}
+
+		return sum / input.length;
 
 	}
 
 	public static void main(String[] args) {
-		Math.max(null);
-		Math.min(null);
-		Math.avg(null);
+		int[] array = new int[] { 1, 5, 8, 3, 4, 8 };
+		System.out.println("配列のMAXは：" + Math.max(array));
+		System.out.println("配列のMINは：" + Math.min(array));
+		System.out.println("配列の平均値は：" + Math.avg(array));
 
 	}
 
